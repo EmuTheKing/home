@@ -1,44 +1,76 @@
-body, html {
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
 .container {
-    display: flex;
-}
-
-.left {
-    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
 }
 
-.right {
-    flex: 2;
-    padding: 20px;
-    background-color: #f0f0f0;
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 40px 0;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.profile-image {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+    overflow: hidden;
 }
 
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+.profile-image img {
+    width: 100%;
+    height: auto;
 }
 
-h2 {
-    font-size: 20px;
+.profile-info {
     margin-top: 20px;
+}
+
+.profile-info h1 {
+    font-size: 36px;
     margin-bottom: 10px;
 }
 
-p {
-    font-size: 16px;
-    line-height: 1.6;
+.profile-info p {
+    font-size: 18px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+main {
+    padding: 40px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 ul {
@@ -50,7 +82,11 @@ ul li {
     margin-bottom: 10px;
 }
 
-a {
-    text-decoration: none;
+ul li a {
     color: #007bff;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
 }
