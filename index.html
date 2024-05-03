@@ -1,42 +1,403 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine moderne Webseite</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+<nav class="navbar sticky top-0 navbar-dark bg-dark-900/80 backdrop-blur-xl" id="navbar">
     <div class="container">
-        <div class="left">
-            <img src="dein_bild.jpg" alt="Dein Bild">
+        <a class="navbar-brand filter text-white" href="/">
+            <i class="fas fa-code fa-3x flex pr-3 m-0 text-3xl"></i>
+        </a>
+        <h1 class="h3 my-1.5">the_emunator</h1>
+        <button class="navbar-btn" data-toggle="collapse" data-target="#navbar-row" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Open navbar menu</span>
+            <span class="block h-1 rounded-full bg-white"></span>
+            <span class="block h-1 mt-1 rounded-full bg-white"></span>
+            <span class="block h-1 mt-1 rounded-full bg-white"></span>
+        </button>
+        <div class="navbar-row" id="navbar-row">
+            <ul class="navbar-col"></ul>
+            <ul class="navbar-col"></ul>
+            <ul class="navbar-col">
+                <li>
+                    <a class="nav-link" href="/#">About me</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">My work</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">Contact me</a>
+                </li>
+                <li>
+                    <a class="nav-link text-primary hover:primary" href="#">Clone project</a>
+                </li>
+            </ul>
         </div>
-        <div class="right">
-            <h1>Über Mich</h1>
-            <div class="section">
-                <h2>Skills</h2>
-                <p>Hier können deine Fähigkeiten aufgelistet werden.</p>
+    </div>
+</nav>
+<section class="py-12 md:py-16 lg:py-20" id="header">
+    <div class="container">
+        <div class="row items-center gap-y-12">
+            <div class="col md:w-[65%]">
+                <p class="mb-4 uppercase font-medium tracking-widest opacity-80">Hello! I am Emanuel Schörnig</p>
+                <h1>Building Delightful Design Experiences for Users.</h1>
+                <p class="w-[32rem] max-w-full mb-6 text-xl leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque tempor, malesuada adipiscing congue diam.</p>
+                <div class="flex flex-row justify-left">
+                    <a class="btn btn-lg btn-ani btn-cta" href="#">Start a Project</a>
+                </div>
             </div>
-            <div class="section">
-                <h2>Zertifikate</h2>
-                <p>Hier kannst du deine Zertifikate auflisten.</p>
-            </div>
-            <div class="section">
-                <h2>Lebenslauf</h2>
-                <p>Dein Lebenslauf kann hier platziert werden.</p>
-            </div>
-            <div class="section">
-                <h2>Git Projekte</h2>
-                <p>Links zu deinen GitHub-Projekten.</p>
-            </div>
-            <div class="section">
-                <h2>Links</h2>
-                <ul>
-                    <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-                    <!-- Weitere Links hier -->
-                </ul>
+            <div class="col md:w-[35%]">
+                <img class="block w-full mb-4 h-96 object-cover" src="https://d1pnnwteuly8z3.cloudfront.net/images/0685e498-3041-40c5-b872-fdc4737465d7/8b9a57f4-fc82-47c1-98db-c6b6566263ab.png" style="filter:drop-shadow(0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.075))" width="500" height="370" alt="Portrait of a man" />
+                <p class="mb-1 opacity-60">Contact me at</p>
+                <p class="mb-0 text-xl opacity-80">mail@emanuel-schoernig.de</p>
             </div>
         </div>
     </div>
-</body>
-</html>
+</section>
+<section class="py-12 md:py-16 lg:py-20">
+    <div class="container">
+        <div class="row gap-y-5">
+            <div class="col md:w-[37%]">
+                <h2 class="mb-0">About Me</h2>
+            </div>
+            <div class="col md:w-[63%]">
+                <p class="leading-relaxed mb-4 text-xl md:text-2xl">Hi, my name is James. I'm a designer from San Francisco. I have over 10 years of experience in leading teams and shipping complex digital products.</p>
+                <a href="#">More About Me</a>
+            </div>
+        </div>
+        <div class="row mt-12 md:mt-20">
+            <div class="col">
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 lg:gap-8">
+                    <div>
+                        <img class="w-full h-96 lg:h-[28rem] object-cover" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/24bccfc0-e33f-4c71-b14f-f0f898b28c50.jpeg" alt="Working in an office" />
+                    </div>
+                    <div>
+                        <img class="w-full h-96 lg:h-[28rem] object-cover" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/0a5c15a6-48cb-48df-8775-88ff7e944e4e.jpeg" alt="Designing a website" />
+                    </div>
+                    <div class="sm:col-span-2 md:col-auto">
+                        <img class="w-full h-96 lg:h-[28rem] object-cover" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/8682f025-2106-4c80-8100-e94ae3db298f.jpeg" alt="Working on a laptop" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-12 md:py-16 lg:py-20">
+    <div class="container">
+        <div class="row gap-y-2">
+            <div class="col lg:w-[37%]">
+                <h2 class="">Services</h2>
+            </div>
+            <div class="col lg:w-[63%]">
+                <div class="grid md:grid-cols-2 gap-y-8	gap-x-12">
+                    <div class="flex items-center gap-4">
+                        <img class="w-6 h-6" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/816116f7-d4ed-4c39-87c2-b92a7771bcb9.png" alt="" />
+                        <h3 class="h3 m-0 opacity-80">Product Design</h3>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img class="w-6 h-6" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/816116f7-d4ed-4c39-87c2-b92a7771bcb9.png" alt="" />
+                        <h3 class="h3 m-0 opacity-80">Branding</h3>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img class="w-6 h-6" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/816116f7-d4ed-4c39-87c2-b92a7771bcb9.png" alt="" />
+                        <h3 class="h3 m-0 opacity-80">Visual & UI Design</h3>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img class="w-6 h-6" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/816116f7-d4ed-4c39-87c2-b92a7771bcb9.png" alt="" />
+                        <h3 class="h3 m-0 opacity-80">SEO Optimization</h3>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img class="w-6 h-6" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/816116f7-d4ed-4c39-87c2-b92a7771bcb9.png" alt="" />
+                        <h3 class="h3 m-0 opacity-80">Versoly Development</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-16 md:py-20 lg:py-32 bg-dark-900">
+    <div class="container">
+        <div class="row gap-y-12">
+            <div class="col md:w-[37%]">
+                <div class="max-w-full md:w-80">
+                    <h2 class="mb-4">Honourable Recognitions & Awards</h2>
+                    <p class="leading-relaxed">There are many more, review my <a href="#">Linkedin</a> profile to find out.</p>
+                </div>
+            </div>
+            <div class="col md:w-[63%]">
+                <div class="grid md:grid-cols-2 gap-y-8 md:gap-y-16 md:gap-x-8">
+                    <div class="">
+                        <h3 class="h3 text-primary">2001</h3>
+                        <p class="mb-0 text-xl font-medium">Member of Jury Award</p>
+                    </div>
+                    <div class="">
+                        <h3 class="h3 text-primary">2019</h3>
+                        <p class="mb-0 text-xl font-medium">Honourable Design</p>
+                    </div>
+                    <div class="">
+                        <h3 class="h3 text-primary">2018</h3>
+                        <p class="mb-0 text-xl font-medium">Fans favourite</p>
+                    </div>
+                    <div class="">
+                        <h3 class="h3 text-primary">2010</h3>
+                        <p class="mb-0 text-xl font-medium">Design of the day award</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-12 md:py-16 lg:py-20 relative">
+    <div class="container">
+        <div class="row gap-y-12">
+            <div class="col lg:w-[37%]">
+                <h2 class="">Worked with top companies all over the world</h2>
+            </div>
+            <div class="col lg:w-[63%]">
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-12">
+                    <div>
+                        <img class="h-6	sm:h-8" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/318f942f-3f47-4394-8e33-de410ada2788.svg" alt="Logo Placeholder" />
+                    </div>
+                    <div>
+                        <img class="h-6	sm:h-8" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/237629b1-e904-4606-8490-c109d0a0d35e.svg" alt="Logo Placeholder" />
+                    </div>
+                    <div>
+                        <img class="h-6	sm:h-8" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/9983f8da-d2d2-4f17-846a-a5c885c1bdbc.svg" alt="Logo Placeholder" />
+                    </div>
+                    <div>
+                        <img class="h-6	sm:h-8" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/8e5a014e-2138-48fd-b5fe-5f7cd658dbba.svg" alt="Logo Placeholder" />
+                    </div>
+                    <div>
+                        <img class="h-6	sm:h-8" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/8e5a014e-2138-48fd-b5fe-5f7cd658dbba.svg" alt="Logo Placeholder" />
+                    </div>
+                    <div>
+                        <img class="h-6	sm:h-8" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/9983f8da-d2d2-4f17-846a-a5c885c1bdbc.svg" alt="Logo Placeholder" />
+                    </div>
+                    <div>
+                        <img class="h-6	sm:h-88" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/318f942f-3f47-4394-8e33-de410ada2788.svg" alt="Logo Placeholder" />
+                    </div>
+                    <div>
+                        <img class="h-6	sm:h-8" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/237629b1-e904-4606-8490-c109d0a0d35e.svg" alt="Logo Placeholder" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[calc(100%-2.5rem)] h-px bg-dark-400 absolute bottom-0 left-1/2 -translate-x-2/4"></div>
+    </div>
+</section>
+<section class="relative py-12 md:py-16 lg:py-20">
+    <div class="container">
+        <div class="row mb-12 md:mb-16 lg:mb-20">
+            <div class="col w-[32rem] max-w-full">
+                <p class="font-medium tracking-widest uppercase opacity-80">MY RECENT WORK</p>
+                <h2 class="mb-0">I love taking Design from vision to reality.</h2>
+            </div>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4 md:gap-8">
+            <div class="grid grid-cols-1 gap-4 md:gap-8">
+                <a href="#" class="group h-96 sm:h-64 md:h-96 overflow-hidden hover:brightness-100 relative">
+                    <img class="w-full h-full object-cover transition-transform duration-200 ease-in group-hover:scale-110" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/dfbd1e60-ed04-402e-8fcd-eb09bc3e2e89.jpeg" alt="Preview of a project" />
+                    <div class="flex justify-center items-center absolute w-full h-full top-0 bottom-0 bg-dark-900/60 z-10 opacity-0 transition-opacity duration-200 ease-in group-hover:opacity-100">
+                        <div class="text-lg	font-medium md:text-2xl text-white">View Project</div>
+                    </div>
+                </a>
+                <a href="#" class="group h-96 sm:h-80 md:h-[28rem] overflow-hidden hover:brightness-100 relative">
+                    <img class="w-full h-full object-cover transition-transform duration-200 ease-in group-hover:scale-110" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/a3918ac5-5006-472c-a345-811dc17301ec.jpeg" alt="Preview of a project" />
+                    <div class="flex justify-center items-center absolute w-full h-full top-0 bottom-0 bg-dark-900/60 z-10 opacity-0 transition-opacity duration-200 ease-in group-hover:opacity-100">
+                        <div class="text-lg	font-medium md:text-2xl text-white">View Project</div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid grid-cols-1 gap-4 md:gap-8">
+                <a href="#" class="group h-96 sm:h-80 md:h-[28rem] overflow-hidden hover:brightness-100 relative">
+                    <img class="w-full h-full object-cover transition-transform duration-200 ease-in group-hover:scale-110" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/5b56506a-4925-422a-8339-6bd1a4f69b03.jpeg" alt="Preview of a project" />
+                    <div class="flex justify-center items-center absolute w-full h-full top-0 bottom-0 bg-dark-900/60 z-10 opacity-0 transition-opacity duration-200 ease-in group-hover:opacity-100">
+                        <div class="text-lg	font-medium md:text-2xl text-white">View Project</div>
+                    </div>
+                </a>
+                <a href="#" class="group h-96 sm:h-64 md:h-96 overflow-hidden hover:brightness-100 relative">
+                    <img class="w-full h-full object-cover transition-transform duration-200 ease-in group-hover:scale-110" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/51224e1c-1c8d-49af-bed4-a577ab6e7a59.jpeg" alt="Preview of a project" />
+                    <div class="flex justify-center items-center absolute w-full h-full top-0 bottom-0 bg-dark-900/60 z-10 opacity-0 transition-opacity duration-200 ease-in group-hover:opacity-100">
+                        <div class="text-lg	font-medium md:text-2xl text-white">View Project</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="flex flex-row justify-center mt-8 md:mt-12 lg:mt-16">
+            <a class="btn btn-lg btn-ani btn-cta" href="#">View all projects</a>
+        </div>
+        <div class="w-[calc(100%-2.5rem)] h-px bg-dark-400 absolute bottom-0 left-1/2 -translate-x-2/4"></div>
+    </div>
+</section>
+<section class="py-12 md:py-16 lg:py-20">
+    <div class="container">
+        <div class="row mb-12 md:mb-16 lg:mb-20">
+            <div class="col w-[32rem] max-w-full">
+                <p class="font-medium tracking-widest uppercase opacity-80">TESTIMONIALS</p>
+                <h2 class="mb-0">What people are saying About me</h2>
+            </div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 md:gap-4 lg:gap-8">
+            <div class="px-8 py-12 bg-neutral lg:p-12 flex flex-col gap-8">
+                <div class="h-6 text-primary">
+                    <svg height="100%" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.92 11.44H0.36L5.16 0.399998H7.8L4.92 11.44ZM14.52 11.44H9.96L14.76 0.399998H17.4L14.52 11.44Z" fill="currentcolor"></path>
+                    </svg>
+                </div>
+                <p class="text-xl md:text-2xl opacity-80 leading-relaxed">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of a classical.</p>
+                <div class="flex gap-4 sm:items-center flex-col sm:flex-row">
+                    <div>
+                        <img class="w-12 h-12 object-cover rounded-full" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/c66aa85b-1d9d-48ec-8f78-e3c00f3fe3ad.jpeg" alt="Portrait of a client" />
+                    </div>
+                    <div>
+                        <p class="mb-0 text-xl">Steve Mark</p>
+                        <p class="mb-0 opacity-60">Founder & Leader</p>
+                    </div>
+                </div>
+            </div>
+            <div class="px-8 py-12 bg-neutral lg:p-12 flex flex-col gap-8">
+                <div class="h-6 text-primary">
+                    <svg height="100%" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.92 11.44H0.36L5.16 0.399998H7.8L4.92 11.44ZM14.52 11.44H9.96L14.76 0.399998H17.4L14.52 11.44Z" fill="currentcolor"></path>
+                    </svg>
+                </div>
+                <p class="text-xl md:text-2xl opacity-80 leading-relaxed">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of a classical.</p>
+                <div class="flex gap-4 sm:items-center flex-col sm:flex-row">
+                    <div>
+                        <img class="w-12 h-12 object-cover rounded-full" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/c66aa85b-1d9d-48ec-8f78-e3c00f3fe3ad.jpeg" alt="Portrait of a client" />
+                    </div>
+                    <div>
+                        <p class="mb-0 text-xl">Steve Mark</p>
+                        <p class="mb-0 opacity-60">Founder & Leader</p>
+                    </div>
+                </div>
+            </div>
+            <div class="px-8 py-12 bg-neutral lg:p-12 flex flex-col gap-8">
+                <div class="h-6 text-primary">
+                    <svg height="100%" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.92 11.44H0.36L5.16 0.399998H7.8L4.92 11.44ZM14.52 11.44H9.96L14.76 0.399998H17.4L14.52 11.44Z" fill="currentcolor"></path>
+                    </svg>
+                </div>
+                <p class="text-xl md:text-2xl opacity-80 leading-relaxed">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of a classical.</p>
+                <div class="flex gap-4 sm:items-center flex-col sm:flex-row">
+                    <div>
+                        <img class="w-12 h-12 object-cover rounded-full" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/c66aa85b-1d9d-48ec-8f78-e3c00f3fe3ad.jpeg" alt="Portrait of a client" />
+                    </div>
+                    <div>
+                        <p class="mb-0 text-xl">Steve Mark</p>
+                        <p class="mb-0 opacity-60">Founder & Leader</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-12 md:py-16 lg:py-20">
+    <div class="container">
+        <div class="row gap-y-12">
+            <div class="col lg:w-[37%]">
+                <h2 class="mb-4">My Latest Blog Posts About Design & Tech</h2>
+                <p class="leading-relaxed">Check out my <a href="#">Instagram</a> profile to find out.</p>
+            </div>
+            <div class="col lg:w-[63%]">
+                <div class="grid gap-12	sm:gap-8">
+                    <div class="flex flex-col sm:flex-row sm:items-center">
+                        <a href="#" class="group overflow-hidden hover:brightness-100 mb-4 sm:mb-0 sm:mr-4 md:mr-8 shrink-0 grow-0">
+                            <img class="group-hover:scale-110 w-full sm:w-48 h-64 object-cover transition-transform duration-300 ease-in" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/f22ea925-3ca0-4f1e-abf7-14bba2a93dd1.jpeg" alt="Laptop in front of a window" />
+                        </a>
+                        <div>
+                            <p class="mb-4 uppercase font-medium tracking-widest opacity-80">Published on medium.com</p>
+                            <a href="#" class="text-white">
+                                <h3 class="h3">The 15 Best Blogs To Follow About Web Design</h3>
+                            </a>
+                            <p class="opacity-60">Vestibulum at pulvinar nisi, non commodo erat. Aliquam lobortis posuere magna sed tincidunt. Sed facilisis vestibulum.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-center">
+                        <a href="#" class="group overflow-hidden hover:brightness-100 mb-4 sm:mb-0 sm:mr-4 md:mr-8 shrink-0 grow-0">
+                            <img class="group-hover:scale-110 w-full sm:w-48 h-64 object-cover transition-transform duration-300 ease-in" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/be1f2252-7e02-4a17-ba80-4518b5b10c8b.jpeg" alt="Group of people working" />
+                        </a>
+                        <div>
+                            <p class="mb-4 uppercase font-medium tracking-widest opacity-80">Published on medium.com</p>
+                            <a href="#" class="text-white">
+                                <h3 class="h3">10 Things Nobody Told You About Being a Web Designer</h3>
+                            </a>
+                            <p class="opacity-60">Vestibulum at pulvinar nisi, non commodo erat. Aliquam lobortis posuere magna sed tincidunt. Sed facilisis vestibulum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="pt-6 pb-6 bg-dark-900 md:pt-12 lg:pt-16" id="footer">
+    <div class="container">
+        <div class="row gap-y-16">
+            <div class="col lg:w-6/12">
+                <div class="max-w-[34rem]">
+                    <h2 class="mb-8 md:mb-12 lg:mb-16">Have an idea? I can help you to Start your project</h2>
+                    <div class="mb-1 text-xl">
+                        <span class="opacity-60">Say Hello! to me</span> 👋
+                    </div>
+                    <a href="#" class="text-xl md:text-2xl text-white hover:text-primary hover:brightness-100">james@finsweet.com</a>
+                </div>
+            </div>
+            <div class="col lg:w-6/12">
+                <div class="flex justify-left lg:justify-center">
+                    <div>
+                        <div class="flex gap-5 md:gap-6 lg:gap-8 mb-5 md:mb-6 lg:mb-8">
+                            <div class="grow-0 shrink-0">
+                                <img class="w-[4.5rem] h-[4.5rem] md:h-24 md:w-24 rounded-full object-cover" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/6eb411d0-22b1-4598-9c7b-5dfaa347544b.jpeg" alt="Portrait of a man" />
+                            </div>
+                            <div>
+                                <p class="text-2xl mb-2 md:text-[2rem] leading-tight">James Robertson</p>
+                                <p class="text-xl opacity-80">Versoly Developer</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-left gap-7">
+                            <a href="#" class="text-white hover:text-primary">
+                                <i class="text-2xl md:text-3xl fab fa-facebook fa-3x"></i>
+                            </a>
+                            <a href="#" class="text-white hover:text-primary">
+                                <i class="text-2xl md:text-3xl fab fa-dribbble fa-3x"></i>
+                            </a>
+                            <a href="#" class="text-white hover:text-primary">
+                                <i class="text-2xl md:text-3xl fab fa-twitter fa-3x"></i>
+                            </a>
+                            <a href="#" class="text-white hover:text-primary">
+                                <i class="text-2xl md:text-3xl fab fa-instagram fa-3x"></i>
+                            </a>
+                            <a href="#" class="text-white hover:text-primary">
+                                <i class="text-2xl md:text-3xl fab fa-behance fa-3x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-8">
+        <div class="row">
+            <div class="col md:w-4/12">
+                <p class="mb-0 opacity-60">© 2022 <a href="#" class="text-white hover:text-white">Finsweet</a>. Powered by Versoly</p>
+            </div>
+            <div class="col md:w-8/12 mt-8 md:mt-0">
+                <div class="flex justify-left md:justify-right flex flex-wrap gap-x-8 gap-y-4">
+                    <div>
+                        <a class="nav-link" href="/#">About me</a>
+                    </div>
+                    <div>
+                        <a class="nav-link" href="#">Services</a>
+                    </div>
+                    <div>
+                        <a class="nav-link" href="#">My work</a>
+                    </div>
+                    <div>
+                        <a class="nav-link" href="#">Contact me</a>
+                    </div>
+                    <div>
+                        <a class="nav-link text-primary hover:primary" href="#">Clone project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
